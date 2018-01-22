@@ -60,7 +60,9 @@ def processRequest(req):
     # result = urlopen(yql_url).read()
     # data = json.loads(result)
 	ticket_id = req.get("parameters").get("Query.Ticket")
+	print (ticket_id)	
 	data=dict[ticket_id]
+	print (data)
     res = makeWebhookResult(data)
     return res
 
