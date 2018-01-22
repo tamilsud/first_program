@@ -24,6 +24,7 @@ from urllib.error import HTTPError
 
 import json
 import os
+import re
 
 from flask import Flask
 from flask import request
@@ -60,7 +61,10 @@ def processRequest(req):
     # result = urlopen(yql_url).read()
     # data = json.loads(result)
 	ticket_id = req.get("parameters").get("Query.Ticket")
-	print (ticket_id)	
+	print (ticket_id)
+	ticket_id=re.replace(r'\s*\"\s*\[','',ticket_id)
+	ticket_id=re.replace(r'\s*\]\s*\"','',ticket_id)
+	ticket_id=re.replace(r'\s*','',ticket_id)
 	data=dict[ticket_id]
 	print (data)
     res = makeWebhookResult(data)
