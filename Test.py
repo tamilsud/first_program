@@ -60,7 +60,7 @@ def processRequest(req):
     # yql_url = baseurl + urlencode({'q': yql_query}) + "&format=json"
     # result = urlopen(yql_url).read()
     # data = json.loads(result)
-	ticket_id = req.get("parameters").get("Query.Ticket")
+	ticket_id = req.get("parameters").get("number-integer")
 	print (ticket_id)
 	ticket_id=re.replace(r'\s*\"\s*\[','',ticket_id)
 	ticket_id=re.replace(r'\s*\]\s*\"','',ticket_id)
