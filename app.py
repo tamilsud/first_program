@@ -38,8 +38,8 @@ dict={  "123456" : "Your Query against 123456 was in Progress. You will get a re
 def webhook():
     req = request.get_json(silent=True, force=True)
 
-    print("Request--Request:")
-    print(json.dumps(req, indent=4))
+    #print("Request--Request:")
+    #print(json.dumps(req, indent=4))
 
     res = processRequest(req)
 
@@ -53,6 +53,7 @@ def webhook():
 def processRequest(req):
     print ('Goes Fine')
     if req.get("result").get("action") != "Query.Ticket":
+        print (Entered Wrong way)
         return {}
 
     ticket_id = req.get("parameters").get("number-integer")
