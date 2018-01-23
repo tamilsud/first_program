@@ -57,9 +57,12 @@ def processRequest(req):
         return {}
 
     ticket_id = req.get("result").get("parameters").get("number-integer")[0]
-    print ('1--{}'.format(ticket_id))
-    data=dict[ticket_id]
-    print('data is {}'.format(data))
+    #print ('1--{}'.format(ticket_id))
+    if ticket_id in dict:
+        data=dict[ticket_id]
+    else:
+        data='Your Key is not in our DB. Please contact our Customer care executive in Mail:aaa@cs.com or in Mobile:9876543210'
+    #print('data is {}'.format(data))
     #print (data)
     res = makeWebhookResult(data)
     return res
