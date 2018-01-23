@@ -44,7 +44,7 @@ def webhook():
     res = processRequest(req)
 
     res = json.dumps(res, indent=4)
-    # print(res)
+    print('response is {}'.format(res))
     r = make_response(res)
     r.headers['Content-Type'] = 'application/json'
     return r
@@ -66,12 +66,13 @@ def processRequest(req):
     #ticket_id=re.sub(r'\s*','',ticket_id)
     #print ('ticket_id after replacement is {}'.format(ticket_id))
     data=dict[ticket_id]
-    print (data)
+    print('data is {}'.format(data))
+    #print (data)
     res = makeWebhookResult(data)
     return res
 
 def makeWebhookResult(data):
-
+    print ('Entered makewebhook result')
     speech = data
     print("Response:")
     print(speech)
