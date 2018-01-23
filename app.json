@@ -1,7 +1,7 @@
 
 {
-  "name": "Start on Heroku: Python",
-  "description": "A barebones Python app, which can easily be deployed to Heroku.",
+  "name": "Ticket ID Assistant",
+  "description": "This app is used to reply to the customer with the data available in Dictionary",
   "buildpacks": [
     {
       "url": "heroku/python"
