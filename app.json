@@ -1,0 +1,7 @@
+{
+  "name": "python Sample",
+  "description": "Chatbot application to find from own Ticket ID",
+  "repository": "https://github.com/tamilsud/first_program",
+  "logo": "https://rawgit.com/heroku/node-js-sample/master/public/node.svg",
+  "keywords": ["Python", "chatbot", "Ticket"]
+}
