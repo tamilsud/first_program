@@ -51,6 +51,7 @@ def webhook():
 
 
 def processRequest(req):
+    print ('Goes Fine')
     if req.get("result").get("action") != "Query.Ticket":
         return {}
 
