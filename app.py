@@ -52,8 +52,9 @@ def webhook():
 
 def processRequest(req):
     print ('Goes Fine')
+    print (req.get("result").get("action"))
     if req.get("result").get("action") != "Query.Ticket":
-        print (Entered Wrong way)
+        print ('Entered Wrong way')
         return {}
 
     ticket_id = req.get("parameters").get("number-integer")
