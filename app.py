@@ -32,7 +32,7 @@ from flask import make_response
 # Flask app should start in global layout
 app = Flask(__name__)
 
-dict={  "123456" : "Your Query against 123456 was in Progress. You will get a reply from customer once our team resolved this","123457" : "Your Query against 123457 was Cancelled", "123458" : "Your Query against 123458 was moved to our technical team. it will be resolved in 12 hour",  "123459" : "Your Query against 123459 was pending",  "123455" : "Your Query against 123455 was cancelled by our administrator contact them by mail:aaa@cs.com or 9876543210"}
+dict={  123456 : "Your Query against 123456 was in Progress. You will get a reply from customer once our team resolved this",123457 : "Your Query against 123457 was Cancelled", 123458 : "Your Query against 123458 was moved to our technical team. it will be resolved in 12 hour",  123459 : "Your Query against 123459 was pending",  123455 : "Your Query against 123455 was cancelled by our administrator contact them by mail:aaa@cs.com or 9876543210"}
 @app.route('/webhook', methods=['POST'])
 def webhook():
     req = request.get_json(silent=True, force=True)
