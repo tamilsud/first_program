@@ -4,9 +4,6 @@
   "description": "A barebones Python app, which can easily be deployed to Heroku.",
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
-    },
-    {
       "url": "heroku/python"
     }
   ]
