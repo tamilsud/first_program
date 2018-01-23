@@ -59,12 +59,12 @@ def processRequest(req):
 
     ticket_id = req.get("result").get("parameters").get("number-integer")[0]
     print ('1--{}'.format(ticket_id))
-    ticket_id = req.get("result").get("parameters").get("number-integer").get("0")
-    print ('2--{}'.format(ticket_id))
+    #ticket_id = req.get("result").get("parameters").get("number-integer").get("0")
+    #print ('2--{}'.format(ticket_id))
     #ticket_id=re.sub(r'\s*\[','',ticket_id)
     #ticket_id=re.sub(r'\s*\]','',ticket_id)
     #ticket_id=re.sub(r'\s*','',ticket_id)
-    print ('ticket_id after replacement is {}'.format(ticket_id))
+    #print ('ticket_id after replacement is {}'.format(ticket_id))
     data=dict[ticket_id]
     print (data)
     res = makeWebhookResult(data)
