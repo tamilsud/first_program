@@ -3,15 +3,11 @@
   "description": "This app reply to given Ticket ID",
   "keywords": [
     "productivity",
-    "Python",
-    "scalpel"
+    "Python"
   ],
   "repository": "https://github.com/tamilsud/first_program",
   "logo": "http://xvir.github.io/img/apiai.png",
   "success_url": "/welcome",
-  "scripts": {
-    "postdeploy": "bundle exec rake bootstrap"
-  },
   "image": "heroku/python",
   "buildpacks": [
     {
