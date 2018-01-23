@@ -1,30 +1,21 @@
 {
-  "name": "TicketID-bot",
-  "version": "0.0.1",
-  "description": "A simple CS-application bot to reply Ticket",
-  "main": "Test.py",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tamilsud/first_program.git"
-  },
+  "name": "Ticket ID Assistant",
+  "description": "This app reply to given Ticket ID",
   "keywords": [
-    "bot",
-    "botframework",
-    "dialogflow",
-    "Ticket"
+    "productivity",
+    "Python",
+    "scalpel"
   ],
-  "author": "Tamilselvan Sudalai <tamil.sdl@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tamilsud/first_program/issues"
+  "repository": "https://github.com/tamilsud/first_program",
+  "logo": "http://xvir.github.io/img/apiai.png",
+  "success_url": "/welcome",
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
   },
-  "homepage": "https://github.com/tamilsud/first_program/blob/master/README.md",
-  "dependencies": {
-    "botbuilder": "^1.0.0",
-    "dotenv": "^2.0.0",
-    "jade": "^1.11.0",
-    "request": "^2.72.0",
-    "restify": "^4.1.0"
-  }
+  "image": "heroku/python",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    }
+  ]
 }
