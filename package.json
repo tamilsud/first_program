@@ -1,0 +1,30 @@
+{
+  "name": "TicketID-bot",
+  "version": "0.0.1",
+  "description": "A simple CS-application bot to reply Ticket",
+  "main": "Test.py",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamilsud/first_program.git"
+  },
+  "keywords": [
+    "bot",
+    "botframework",
+    "dialogflow",
+    "Ticket"
+  ],
+  "author": "Tamilselvan Sudalai <tamil.sdl@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamilsud/first_program/issues"
+  },
+  "homepage": "https://github.com/tamilsud/first_program/blob/master/README.md",
+  "dependencies": {
+    "botbuilder": "^1.0.0",
+    "dotenv": "^2.0.0",
+    "jade": "^1.11.0",
+    "request": "^2.72.0",
+    "restify": "^4.1.0"
+  }
+}
