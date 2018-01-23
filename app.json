@@ -1,17 +1,22 @@
+
 {
-  "name": "Ticket ID Assistant",
-  "description": "This app reply to given Ticket ID",
-  "keywords": [
-    "productivity",
-    "Python"
-  ],
-  "repository": "https://github.com/tamilsud/first_program",
-  "logo": "http://xvir.github.io/img/apiai.png",
-  "success_url": "/welcome",
+  "name": "Start on Heroku: Python",
+  "description": "A barebones Python app, which can easily be deployed to Heroku.",
   "image": "heroku/python",
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
+  "repository": "https://github.com/tamilsud/first_program",
+  "keywords": ["python", "django" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "The secret key for the Django application.",
+      "generator": "secret"
     }
-  ]
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python app.py collectstatic --noinput",
+        "test": "python app.py test"
+      }
+    }
+  }
 }
