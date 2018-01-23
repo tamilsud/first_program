@@ -3,5 +3,5 @@
   "description": "Chatbot application to find from own Ticket ID",
   "repository": "https://github.com/tamilsud/first_program",
   "logo": "http://xvir.github.io/img/apiai.png",
-  "keywords": ["Python", "chatbot", "Ticket"]
+  "keywords": ["Python", "chatbot"]
 }
