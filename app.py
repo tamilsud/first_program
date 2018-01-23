@@ -54,13 +54,13 @@ def processRequest(req):
     print ('Goes Fine')
     print (req.get("result").get("action"))
     if req.get("result").get("action") != "Query.Ticket":
-        print ('Entered Wrong way')
+        #print ('Entered Wrong way')
         return {}
 
-    ticket_id = req.get("parameters").get("number-integer")
+    ticket_id = req.get("result").get("parameters").get("number-integer")
     print (ticket_id)
-    ticket_id=re.replace(r'\s*\"\s*\[','',ticket_id)
-    ticket_id=re.replace(r'\s*\]\s*\"','',ticket_id)
+    ticket_id=re.replace(r'\s*\[','',ticket_id)
+    ticket_id=re.replace(r'\s*\]','',ticket_id)
     ticket_id=re.replace(r'\s*','',ticket_id)
     data=dict[ticket_id]
     print (data)
