@@ -2,6 +2,7 @@
 {
   "name": "Ticket ID Assistant",
   "description": "This app is used to reply to the customer with the data available in Dictionary",
+  "Logo":"https://www.python.org/static/img/python-logo.png",
   "buildpacks": [
     {
       "url": "heroku/python"
